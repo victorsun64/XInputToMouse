@@ -135,7 +135,7 @@ int main() {
     enableANSI();
     while (running) {
         processInput();
-        //~60hz poll rate
+        //125hz poll rate
         std::this_thread::sleep_for(std::chrono::milliseconds(8));
     }
     return 0;
